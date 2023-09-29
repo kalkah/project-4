@@ -23,7 +23,7 @@ I exit the MySQL console to start MYSQL interactive script using the command bel
 
 **`sudo mysql_secure_installation`**
 
-**`sudo systemctl status mysql`** command was ran to check the status of the server.
+**`sudo systemctl status mysql`** command was used to check the status of the server.
 
 <img width="443" alt="image" src="https://github.com/kalkah/project-4/assets/95209274/b954fca1-f6ed-4a70-b9ea-e54319480a9d">
 
