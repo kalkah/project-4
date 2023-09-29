@@ -8,8 +8,8 @@ Two Linux-based virtual servers (EC2 instances in AWS) were created and configur
 
 The following commands was run to install mysql-server on the mysql_server 
 
-`**sudo apt update**`
-`**sudo apt install mysql-server**`
+**`sudo apt update`**
+**`sudo apt install mysql-server`**
 
 The following command was used to log in to the MySQL console
 
@@ -27,13 +27,13 @@ I exit the MySQL console to start MYSQL interactive script using the command bel
 
 remote_user was created with the command below, 
 
-**`CREATE USER name 'remote_user'@'%', IDENTIFIED WITH mysql_native_password BY 'kalkah'`;** (% here means that any IP address can be use by the remote and the user should be identified with mysql native password)
+**`CREATE USER name 'remote_user'@'%', IDENTIFIED WITH mysql_native_password BY 'kalkah'`;** (% here means that any IP address can be use by the remote_user and the user should be identified with mysql native password)
 
 Create the database name 'test_db' with the command **`CREATE DATABASE test_db;`**
 
 Granted all privileges on the database name "test_db" to remote user using the command below:
 
-**`GRANT ALL ON test_db.* TO 'remote@user'@'%' WITH GRANT OPTION;`**
+**`GRANT ALL ON test_db.* TO 'remote_user'@'%' WITH GRANT OPTION;`**
 
 Flush the priviledges - **`FLUSH PRIVILEGES`**
 
@@ -61,5 +61,8 @@ From the client_server, I remotely connect to the mysql-server using the command
 
 <img width="443" alt="image" src="https://github.com/kalkah/project-4/assets/95209274/afae2824-7f2d-466a-ab5b-cea3a749577a">
 
+The command **`show databases;`** was run to show that I can interract with the database.
+
+<img width="453" alt="image" src="https://github.com/kalkah/project-4/assets/95209274/64be7ee8-5cc5-4c63-8746-f670bd980638">
 
 
