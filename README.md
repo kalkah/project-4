@@ -29,7 +29,7 @@ I exit the MySQL console to start MYSQL interactive script using the command bel
 
 remote_user was created with the command below, 
 
-**`CREATE USER name 'remote_user'@'%', IDENTIFIED WITH mysql_native_password BY 'kalkah'`;** (% here means that any IP address can be use by the remote_user and the user should be identified with mysql native password)
+**`CREATE USER 'remote_user'@'%' IDENTIFIED WITH mysql_native_password BY 'kalkah'`;** (% here means that any IP address can be use by the remote_user and the user should be identified with mysql native password)
 
 Create the database name 'test_db' with the command **`CREATE DATABASE test_db;`**
 
